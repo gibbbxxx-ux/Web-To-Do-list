@@ -42,7 +42,7 @@ export async function ambilCuaca(kota) {
 export async function muatSemuaWidget() {
   const status = document.getElementById("status");
   status.textContent = "Memuat data...";
-  await Promise.all([ambilKutipan(), ambilCuaca("Bandung")]);
+  await Promise.all([ambilKutipan(), ambilCuaca("Jakarta")]);
   status.textContent = "Data berhasil dimuat";
 }
 
