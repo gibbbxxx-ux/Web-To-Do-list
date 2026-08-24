@@ -21,8 +21,6 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* ===== TOMBOL & INPUT UMUM ===== */
-
 button {
   padding: 6px 12px;
   border: 1px solid #ccc;
@@ -132,8 +130,6 @@ footer p {
   padding: 5px;
 }
 
-/* ===== RESPONSIVE ===== */
-
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
@@ -152,8 +148,6 @@ footer p {
     max-height: none;
   }
 }
-
-/* ===== TUGAS ===== */
 
 #input-tugas,
 #cari-tugas {
@@ -197,8 +191,6 @@ footer p {
   border-top: 2px solid #85310a;
 }
 
-/* ===== CATATAN ===== */
-
 #catatan h2 {
   margin-bottom: 10px;
 }
@@ -234,8 +226,6 @@ footer p {
   color: #767676;
 }
 
-/* ===== CUACA ===== */
-
 .cuaca-input {
   display: flex;
   gap: 6px;
@@ -254,8 +244,6 @@ footer p {
   border-radius: 6px;
   font-family: inherit;
 }
-
-/* ===== DARK MODE ===== */
 
 body.dark-mode {
   background-color: rgb(34, 34, 34);
