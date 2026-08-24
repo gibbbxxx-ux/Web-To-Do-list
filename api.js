@@ -12,9 +12,6 @@ export async function ambilKutipan() {
   }
 }
 
-
-
-
 export async function ambilCuaca(kota) {
   const cuacaHasil = document.getElementById("cuaca-hasil");
   const apiKey = "18841e293493445a30cd12b4f150c108";
@@ -54,12 +51,21 @@ export function initCuaca() {
   const tombolCuaca = document.getElementById("tombol-cuaca");
   const info = document.getElementById("info-cuaca");
 
-  tombolCuaca.addEventListener("click", () => {
+  const cekCuaca = () => {
     const kota = inputKota.value.trim();
     if (kota === "") {
       info.textContent = "Masukkan nama kota terlebih dahulu";
       return;
     }
     ambilCuaca(kota);
+  };
+
+  tombolCuaca.addEventListener("click", cekCuaca);
+
+  inputKota.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      cekCuaca();
+    }
   });
 }

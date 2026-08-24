@@ -1,6 +1,6 @@
 import { initTugas } from "./tugas.js";
 import { initCatatan } from "./catatan.js";
-import { initCuaca, muatSemuaWidget } from "./api.js";
+import { initCuaca, muatSemuaWidget, ambilKutipan } from "./api.js";
 
 function buildLayout() {
   const header = document.createElement("header");
