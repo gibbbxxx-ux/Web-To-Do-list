@@ -92,8 +92,14 @@ function buildLayout() {
   sectionQuotes.appendChild(judulQuotes);
   sectionQuotes.appendChild(kutipanHarian);
 
-  main.appendChild(sectionQuotes);
+    main.appendChild(sectionQuotes);
+    const tombolRefreshQt = document.createElement("button");
+  tombolRefreshQt.textContent = "Refresh Quotes";
+  tombolRefreshQt.addEventListener("click", () => {
+    ambilKutipan();
+  });
 
+sectionQuotes.appendChild(tombolRefreshQt);
   const cuaca = document.createElement("section");
   cuaca.id = "cuaca";
   const subJudulCuaca = document.createElement("h2");

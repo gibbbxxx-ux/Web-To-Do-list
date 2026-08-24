@@ -12,6 +12,9 @@ export async function ambilKutipan() {
   }
 }
 
+
+
+
 export async function ambilCuaca(kota) {
   const cuacaHasil = document.getElementById("cuaca-hasil");
   const apiKey = "18841e293493445a30cd12b4f150c108";
