@@ -182,7 +182,7 @@ footer p {
 }
 
 #input-catatan {
-  width: 100%;
+  width: 80%;
   min-height: 64px;
   resize: vertical;
   margin-bottom: 6px;
@@ -220,15 +220,6 @@ footer p {
 
 .cuaca-input input {
   flex: 1;
-}
-
-#cuaca-hasil {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-family: inherit;
 }
 
 body.dark-mode {
