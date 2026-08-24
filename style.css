@@ -95,20 +95,6 @@ main {
   grid-area: cuaca;
 }
 
-#tugas,
-#quotes,
-#catatan,
-#cuaca {
-  box-sizing: border-box;
-  background-color: white;
-  padding: 12px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  min-height: 0;
-  max-height: 320px;
-  overflow-y: auto;
-}
-
 #app > p {
   grid-column: 1 / -1;
   text-align: center;
@@ -252,15 +238,6 @@ body.dark-mode {
 
 body.dark-mode header {
   background-color: #5c2107;
-}
-
-body.dark-mode #tugas,
-body.dark-mode #quotes,
-body.dark-mode #catatan,
-body.dark-mode #cuaca {
-  background-color: #222;
-  color: white;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 body.dark-mode input,
